@@ -1,0 +1,11 @@
+---
+- name: class project
+  hosts: all
+  become: yes
+  tasks:
+    - name: Clone a repo 
+      ansible.builtin.git:
+        repo: https://github.com/pluralsight-projects/PythonFlask-JobBoard.git
+        dest: /exitehome/ubuntu
+        single_branch: yes
+        version: master
