@@ -6,6 +6,22 @@
     - name: Clone a repo 
       ansible.builtin.git:
         repo: https://github.com/pluralsight-projects/PythonFlask-JobBoard.git
-        dest: /exitehome/ubuntu
+        dest: home/ubuntu
         single_branch: yes
         version: master
+
+    - name: Install python3 httpd  (state=present is optional)
+      ansible.builtin.apt:
+        name: python3
+        state: present 
+        update_cache: yes  
+
+    - name: Install pip3 httpd  (state=present is optional)
+      ansible.builtin.apt:
+        name: python3-pip
+        state: present
+        update_cache: yes
+
+
+
+
