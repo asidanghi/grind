@@ -1,2 +1,0 @@
-damon@20.164.212.215 ansible_ssh_private_key_file=/home/slaves/key.pub
-ubuntu@ec2-54-166-118-189.compute-1.amazonaws.com ansible_ssh_private_key_file=/home/slaves/premkey.pem
