@@ -4,7 +4,7 @@
 - name: Example clone of a single branch
   host: all 
   become: yes
-  task: 
+  tasks: 
   - name: clone repo
     ansible.builtin.git:
       repo: https://github.com/bradtraversy/myflaskapp.git
