@@ -2,8 +2,12 @@
 
 ---
 - name: Example clone of a single branch
-  ansible.builtin.git:
-     repo: https://github.com/bradtraversy/myflaskapp.git
-     dest: /home/damon/test
-     single_branch: yes
-     version: master
+  host: all 
+  become: yes
+  task: 
+  - name: clone repo
+    ansible.builtin.git:
+      repo: https://github.com/bradtraversy/myflaskapp.git
+      dest: /home/damon/test
+      single_branch: yes
+      version: master
