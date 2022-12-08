@@ -2,7 +2,7 @@
 
 ---
 - name: Example clone of a single branch
-  host: all 
+  hosts: all 
   become: yes
   tasks: 
   - name: clone repo
