@@ -22,6 +22,12 @@
         state: present
         update_cache: yes
 
+    - name: Install requirments httpd  (state=present is optional)
+      ansible.builtin.shell:
+       cmd: sudo pip install 
+        
+        
+
 
 
 
